@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* leyenda de promociones */
+.color_1{
+    background-color: #F09278;
+    padding: 1%;
+}
+/* logo */
+.cabeza{
+    background-image: url(./fondo/gris_ocuro.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Signika Negative', sans-serif;
+}
+.logo_1{
+   width: 80px; 
+}
+
+/* menu de opciones */
+.menu_option{
+    background-color: black;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: none;
+    justify-content: space-evenly;
+
+}
+
+.menu_option_item{
+    text-decoration: aliceblue;
+    color: azure;
+    font-family: 'Signika Negative', sans-serif;
+}
+/* promociones */
+.promo{
+    display: grid;
+    padding: 15px;
+    justify-content: center;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10PX 10PX;
+    
+}
+.promo_item{
+    width: 90%;
+    height: 90%;
+    border-radius: 1%;
+    
+}
+
+.producto{
+    font-family: 'Signika Negative', sans-serif;
+    background-color: #F09278;
+    width: fit-content;
+    padding: 3px 3px 3px 3px;
+    border:solid 1px black;
+    border-radius: 2px;
+}
+
+.producto_encabezado_destacado{
+    display: grid;
+    gap: 15px 15px;
+    width: 250px;
+    padding: 15px;
+}
+
+.producto_encabezado{
+    grid-template-columns: 250px 250px 250px;
+
+}
+
+/* pie de pagina */
+.pie_option_item{
+    width: 30px;
+}
+.pie_option_maps{
+    width: auto;
+    
+
+}
+.pie_option_mercadopago{
+    width: 300px;
+}
+.pie{
+    background-image: url(./fondo/gris_ocuro.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.pie_item{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+/* facebook */
+.facebook{
+    width: 30px;
+}
+/* whatsapp */
+.whatsapp{
+    width: 3%;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+}
+/* instragram */
+.instragram{
+    width: 30px;
+}
+/* mercadopago */
+.mercadopago{
+    width: 30%;
+}
+/* mapa */
+.mapa{
+    margin-right: 15px;
+}
+
+/* media screen celular*/
+@media screen and (max-width: 320px){
+    .cabeza{
+        font-size: 8px;
+    }
+    .logo_1{
+        width: 30px;
+    }
+    .menu_option{
+        font-size: 8px;
+    }
+    .promo_item{
+        display: grid;
+        grid-auto-flow: dense;
+    }
+    .producto{
+        font-size: 8px;
+    }
+    .producto_encabezado{
+        object-position: center;
+        width: 1px;
+        
+    }
+}
